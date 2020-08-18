@@ -1,0 +1,82 @@
+$bg-color: #2B2D42;
+$accent-1: #FFBA49;
+$accent-2: #EF5B5B;
+$accent-3: #FE938C;
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    background-color: $bg-color;
+    font-family: 'Nunito', sans-serif;
+
+    .form-holder {
+        margin: auto;
+
+        .form {
+
+            .logo {
+                object-fit: contain;
+                width: 80px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .title {
+                font-size: 2em;
+                letter-spacing: 1px;
+                color: white;
+                margin-top: 1.4rem;
+                margin-bottom: 2rem;
+                font-weight: 500;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            app-input {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                width: 340px;
+            }
+
+            app-btn-yellow {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 2rem;
+            }
+
+            .sign-in-holder {
+                width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 1rem;
+
+                .white-txt {
+                    font-size: 1.1em;
+                    color: white;   
+                }
+
+                .sign-in {
+                    font-size: 1.1em;
+                    margin-left: 4px;
+                    color: white;
+                    transition: .2s ease-out;
+                    cursor: pointer;
+    
+                    &:hover {
+                        color: $accent-3;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}

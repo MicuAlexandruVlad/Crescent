@@ -1,0 +1,16 @@
+<div class="body flex-col">
+  <div class="form-holder flex-col">
+    <div class="form flex-col">
+      <img src="../../../assets/logo.png" class="logo">
+      <span class="title">Register a new account</span>
+      <app-input [formEvent]="event" key="signUpEmail" inputType="email" label="Email"></app-input>
+      <app-input [formEvent]="event" key="signUpPassword" inputType="password" label="Password"></app-input>
+      <app-input [formEvent]="event" key="signUpRepeatPassword" inputType="password" label="Repeat Password"></app-input>
+      <app-btn-yellow (click)="onSignUp()" text="Sign Up"></app-btn-yellow>
+      <div class="flex-row sign-in-holder">
+        <span class="white-txt">Already have an account ?</span>
+        <span (click)="onSignIn()" class="sign-in">Sign In</span>
+      </div>
+    </div>
+  </div>
+</div>

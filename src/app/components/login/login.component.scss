@@ -1,0 +1,125 @@
+
+$bg-color: #2B2D42;
+$accent-1: #FFBA49;
+$accent-2: #EF5B5B;
+$accent-3: #FE938C;
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    background-color: $bg-color;
+    font-family: 'Nunito', sans-serif;
+
+    .form-holder {
+        margin: auto;
+        width: 340px;
+        height: fit-content;
+        width: 340px;
+
+        .logo {
+            object-fit: contain;
+            width: 80px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form-title {
+            font-size: 2em;
+            letter-spacing: 1px;
+            color: white;
+            margin-top: 1.4rem;
+            font-weight: 500;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form-subtitle {
+            font-size: 1.1em;
+            text-align: center;
+            color: white;
+            margin-top: 1.4rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+            margin-left: auto;
+            margin-right: auto;
+            letter-spacing: .4px;
+        }
+
+        app-input {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            width: 340px;
+        }
+
+        .forgot-pass {
+            color: white;
+            font-size: 1.1em;
+            margin-left: auto;
+            cursor: pointer;
+            transition: .2s ease-out;
+
+            &:hover {
+                color: $accent-3;
+            }
+        }
+
+        .sign-in {
+            width: fit-content;
+            letter-spacing: .4px;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+            background-color: $accent-1;
+            color: black;
+            outline: none;
+            border: none;
+            border-radius: 2rem;
+            font-size: 1.3em;
+            margin-top: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+            cursor: pointer;
+            transition: .2s ease-out;
+            font-weight: 400;
+
+            &:hover {
+                box-shadow: 0px 4px 24px 4px #FFBA4930;
+            }
+        }
+
+        .register-holder {
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1rem;
+
+            .white-txt {
+                font-size: 1.1em;
+                color: white;   
+            }
+
+            .register {
+                font-size: 1.1em;
+                margin-left: 4px;
+                color: white;
+                transition: .2s ease-out;
+                cursor: pointer;
+
+                &:hover {
+                    color: $accent-3;
+                }
+            }
+        }
+    }
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}

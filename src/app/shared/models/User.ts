@@ -1,10 +1,10 @@
 export class User {
     id: string
-    firstName: string
-    lastName: string 
+    firstName: string = ''
+    lastName: string  = ''
     email: string
     password: string
-    hasPhoto: string
-    photoId: string
-    bio: string
+    hasPhoto: boolean = false
+    verified: boolean = false
+    photoId: string = ''
 }

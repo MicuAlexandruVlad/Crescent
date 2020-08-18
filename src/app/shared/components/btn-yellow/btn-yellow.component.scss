@@ -1,0 +1,25 @@
+$bg-color: #2B2D42;
+$accent-1: #FFBA49;
+$accent-2: #EF5B5B;
+$accent-3: #FE938C;
+
+.btn {
+    width: fit-content;
+    letter-spacing: .4px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: $accent-1;
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: .2s ease-out;
+    font-weight: 400;
+    &:hover {
+        box-shadow: 0px 4px 24px 4px #FFBA4930;
+    }
+}

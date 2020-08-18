@@ -1,0 +1,74 @@
+$bg-color: #2B2D42;
+$accent-1: #FFBA49;
+$accent-2: #EF5B5B;
+$accent-3: #FE938C;
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    background-color: $bg-color;
+
+    .form {
+        margin: auto;
+
+        .logo {
+            object-fit: contain;
+            width: 80px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .title {
+            font-size: 2em;
+            letter-spacing: 1px;
+            color: white;
+            margin-top: 1.4rem;
+            margin-bottom: 1.4rem;
+            font-weight: 500;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            text-align: center;
+            max-width: 340px;
+            color: white;
+            margin-bottom: 2rem;
+            font-weight: 300;
+            margin-left: auto;
+            margin-right: auto;
+            letter-spacing: .4px;
+        }
+
+        .code-holder {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: .6rem;
+
+            app-input {
+                width: 40px;
+                font-size: 1.6em;
+                font-weight: 700;
+                margin-right: .5rem;
+                margin-left: .5rem;
+            }
+        }
+
+        app-btn-yellow {
+            margin-top: 2.6rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,3 +1,15 @@
-<p>
-  login works!
-</p>
+<div class="body flex-col">
+  <div class="form-holder flex-col">
+    <img src="../../../assets/logo.png" class="logo">
+    <span class="form-title">Sign In</span>
+    <span class="form-subtitle">Hello there! Sign in to start chatting with your friends or meet new people.</span>
+    <app-input #email [maxLength]="200" key="email" inputType="email" label="Email"></app-input>
+    <app-input #pass [maxLength]="200" key="password" inputType="password" label="Password"></app-input>
+    <span (click)="onForgotPass()" class="forgot-pass">Forgot password ?</span>
+    <button class="sign-in" (click)="onSignIn()">Sign In</button>
+    <div class="flex-row register-holder">
+      <span class="white-txt">Don't have an account ?</span>
+      <span (click)="onRegister()" class="register"><b>Register</b></span>
+    </div>
+  </div>
+</div>

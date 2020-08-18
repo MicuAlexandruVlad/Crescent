@@ -1,0 +1,16 @@
+<div class="body flex-col">
+  <div class="form flex-col">
+    <img src="../../../assets/logo.png" class="logo">
+    <span class="title">Check your email</span>
+    <span class="subtitle">We have sent an email containing a code to your email address. Please input that in the field
+      below to verify your account.</span>
+    <div class="code-holder flex-row">
+      <app-input id="inp1" #inp1 [maxLength]="1"></app-input>
+      <app-input id="inp2" #inp2 [maxLength]="1"></app-input>
+      <app-input id="inp3" #inp3 [maxLength]="1"></app-input>
+      <app-input id="inp4" #inp4 [maxLength]="1"></app-input>
+      <app-input id="inp5" #inp5 [maxLength]="1"></app-input>
+    </div>
+    <app-btn-yellow (click)="onVerify()" text="Verify Account"></app-btn-yellow>
+  </div>
+</div>
