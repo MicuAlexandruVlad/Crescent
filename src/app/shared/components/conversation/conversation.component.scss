@@ -1,0 +1,63 @@
+$bg-color: #2B2D42;
+$accent-1: #FFBA49;
+$accent-2: #EF5B5B;
+$accent-3: #FE938C;
+$bg-changed-1: #2f364e;
+$bg-changed-2: #383D57;
+$text-message-color: #8096d3;
+
+.body {
+    width: inherit;
+    font-family: 'Nunito', sans-serif;
+    padding: 1rem;
+    transition: .2s ease-out;
+    cursor: pointer;
+
+    .profile-img {
+        width: 44px;
+        height: 44px;
+        border-radius: 100%;
+    }
+
+    .data {
+        width: 100%;
+        margin-left: 1rem;
+        
+        .name {
+            font-size: 1.1em;
+            color: white;
+        }
+
+        .time {
+            font-size: 1em;
+            color: rgba(185, 185, 185, 0.658);
+            margin-left: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .text-message {
+            font-size: 1em;
+            color: $text-message-color;
+            margin-top: .2rem;
+        }
+    }
+
+    &:hover {
+        background-color: $bg-changed-1;
+    }
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.selected {
+    background-color: $bg-changed-1;
+}

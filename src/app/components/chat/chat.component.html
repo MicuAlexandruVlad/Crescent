@@ -1,3 +1,37 @@
-<p>
-  chat works!
-</p>
+<div class="body flex-row bg">
+  <div class="card flex-row">
+    <div class="left-col flex-col">
+      <div class="user-photo"></div>
+      <div class="icons flex-col">
+        <div (click)="onChat()" [ngClass]="{'icon-parent-selected': chatSelected}" id="chat-parent" class="icon-parent flex-row">
+          <img #chat id="chat" src="{{ chatPath }}" class="icon">
+        </div>
+        <div (click)="onExplore()" [ngClass]="{'icon-parent-selected': exploreSelected}" id="explore-parent" class="icon-parent flex-row">
+          <img #explore id="explore" src="{{ explorePath }}" class="icon">
+        </div>
+        <div (click)="onSettigns()" [ngClass]="{'icon-parent-selected': settingsSelected}" id="settings-parent" class="icon-parent flex-row">
+          <img #settings id="settings" src="{{ settingsPath }}" class="icon">
+        </div>
+      </div>
+      <img (click)="onSignOut()" id="sign-out" src="../../../assets/logout_not_active.png" class="sign-out">
+    </div>
+    <div class="middle-col flex-col">
+      <div class="search-holder flex-row">
+        <div class="search flex-row">
+          <img src="../../../assets/search.png" class="search-icon">
+          <input [(ngModel)]="filterValue" placeholder="Search conversation" spellcheck="false" type="text">
+        </div>
+      </div>
+      <div class="conversation-holder">
+        <div *ngFor="let conversation of (conversations | conversationSearch : filterValue); let i=index;">
+          <app-conversation (click)="onConversationSelected(i)" [conversation]="conversation"></app-conversation>
+        </div>
+      </div>
+    </div>
+    <div class="right-col flex-col">
+      <div *ngIf="conversationSelected" class="chat-window flex-col">
+        <app-chat-window [conversation]="selectedConversation"></app-chat-window>
+      </div>
+    </div>
+  </div>
+</div>

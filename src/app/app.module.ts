@@ -15,7 +15,13 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { BtnYellowComponent } from './shared/components/btn-yellow/btn-yellow.component'
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { ChatComponent } from './components/chat/chat.component';
-
+import { ConfirmSignOutComponent } from './shared/components/dialogs/confirm-sign-out/confirm-sign-out.component';
+import { MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
+import { MessageComponent } from './shared/components/message/message.component';
+import { ConversationComponent } from './shared/components/conversation/conversation.component';
+import { ConversationSearchPipe } from './shared/pipes/conversation-search.pipe';
+import { ChatWindowComponent } from './shared/components/chat-window/chat-window.component'
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,12 +33,24 @@ import { ChatComponent } from './components/chat/chat.component';
     BtnYellowComponent,
     VerifyEmailComponent,
     ChatComponent,
+    ConfirmSignOutComponent,
+    MessageComponent,
+    ConversationComponent,
+    ConversationSearchPipe,
+    ChatWindowComponent,
+  ],
+  entryComponents: [
+    ConfirmSignOutComponent
+  ],
+  exports: [
+    ConversationSearchPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatInputModule,
+    MatDialogModule,
     FormsModule,
     ToastrModule.forRoot({
       timeOut: 3000,
@@ -40,7 +58,7 @@ import { ChatComponent } from './components/chat/chat.component';
       preventDuplicates: true,
     }),
   ],
-  providers: [],
+  providers: [{provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

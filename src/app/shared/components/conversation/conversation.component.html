@@ -1,0 +1,13 @@
+<div [ngClass]="{'selected': conversation.selected}" class="body flex-row">
+  <img src="../../../../assets/logo.png" class="profile-img">
+  <div class="flex-col data">
+    <div class="flex-row">
+      <span
+        class="name">{{ conversation.conversationUser.firstName + ' ' + conversation.conversationUser.lastName }}</span>
+      <span class="time">{{ conversation.lastMessage.timestamp }}</span>
+    </div>
+    <div class="flex-row">
+      <span *ngIf="conversation.lastMessage.type == 0" class="text-message">{{ conversation.lastMessage.data }}</span>
+    </div>
+  </div>
+</div>

@@ -7,4 +7,7 @@ export class User {
     hasPhoto: boolean = false
     verified: boolean = false
     photoId: string = ''
+
+    // 0 -> online, 1 -> offline
+    status: number
 }

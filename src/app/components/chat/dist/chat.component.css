@@ -1,0 +1,129 @@
+.body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Nunito", sans-serif;
+}
+.body .card {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-radius: 2rem;
+  width: 100%;
+}
+.body .card .left-col {
+  height: 100%;
+  width: 80px;
+  background-color: #2f364e;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.body .card .left-col .user-photo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+.body .card .left-col .icons {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.body .card .left-col .icons .icon-parent {
+  transition: 0.2s ease-out;
+  width: 100%;
+}
+.body .card .left-col .icons .icon-parent .icon {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  object-fit: contain;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: 0.2s ease-out;
+}
+.body .card .left-col .icons .icon-parent:hover {
+  background-color: #383D57;
+}
+.body .card .left-col .sign-out {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+.body .card .middle-col {
+  background-color: #383D57;
+  height: 100%;
+  width: 420px;
+}
+.body .card .middle-col .search-holder {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #2f364e;
+}
+.body .card .middle-col .search-holder .search {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+  background-color: #2f364e;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 1rem;
+}
+.body .card .middle-col .search-holder .search .search-icon {
+  object-fit: contain;
+  width: 20px;
+}
+.body .card .middle-col .search-holder .search input {
+  margin-left: 12px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: #FE938C;
+  outline: none;
+  font-size: 1.1em;
+}
+.body .card .middle-col .conversation-holder {
+  height: 100%;
+  max-width: 360px;
+  overflow: hidden;
+}
+.body .card .right-col {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.icon-parent-selected {
+  background-color: #383D57;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.bg {
+  background: #2c2e44;
+  background: radial-gradient(circle, #2c2e44 0%, #2a2c41 100%);
+  background: -moz-radial-gradient(circle, #2c2e44 0%, #2a2c41 100%);
+  background: -webkit-radial-gradient(circle, #2c2e44 0%, #2a2c41 100%);
+}

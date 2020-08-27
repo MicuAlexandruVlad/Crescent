@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
           const user = this.getUserData(res.data.user)
           this.dataService.user = user
           localStorage.setItem('token', token)
-          this.router.navigate(['./chat'])
+          this.router.navigate(['./chat'], { replaceUrl: true })
         }
       })
     }
